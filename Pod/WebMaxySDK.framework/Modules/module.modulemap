@@ -1,0 +1,11 @@
+framework module WebMaxySDK {
+  umbrella header "WebMaxySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module WebMaxySDK.Swift {
+    header "WebMaxySDK-Swift.h"
+    requires objc
+}
