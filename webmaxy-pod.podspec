@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "webmaxy-pod"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = "CocoaPod implementation of WebMaxy SDK"
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 WebMaxy sdk is used add support for iOS app.It is in development phase.
                        DESC
 
-  s.homepage         = "https://github.com/razorpay/razorpay-pod"
+  s.homepage         = "https://github.com/BKudale/WebMaxy-SDK"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { 'bharat@sphinx-solution.com' => 'bharat@sphinx-solution.com' }
