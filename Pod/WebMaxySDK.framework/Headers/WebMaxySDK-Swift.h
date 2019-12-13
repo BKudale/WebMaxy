@@ -169,6 +169,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -186,6 +188,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC10WebMaxySDK16CXEImagesToVideo")
+@interface CXEImagesToVideo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -199,9 +208,49 @@ SWIFT_CLASS_NAMED("Events")
 @property (nonatomic, copy) NSString * _Nullable date_time;
 @property (nonatomic, copy) NSString * _Nullable identity_id;
 @property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSString * _Nullable property;
+@property (nonatomic, copy) NSString * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nullable token;
 @end
+
+
+SWIFT_CLASS("_TtC10WebMaxySDK13SurveyManager")
+@interface SurveyManager : NSObject <UIPopoverPresentationControllerDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10WebMaxySDK11TouchHelper")
+@interface TouchHelper : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("Touches")
+@interface Touches : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Touches (SWIFT_EXTENSION(WebMaxySDK))
+@property (nonatomic, copy) NSString * _Nullable date;
+@property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable height;
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable object;
+@property (nonatomic, copy) NSString * _Nullable object_text;
+@property (nonatomic, copy) NSString * _Nullable screen_name;
+@property (nonatomic, copy) NSString * _Nullable timestamp;
+@property (nonatomic, copy) NSString * _Nullable touch_type;
+@property (nonatomic, copy) NSString * _Nullable width;
+@property (nonatomic, copy) NSString * _Nullable x;
+@property (nonatomic, copy) NSString * _Nullable y;
+@end
+
+
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -378,6 +427,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -395,6 +446,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC10WebMaxySDK16CXEImagesToVideo")
+@interface CXEImagesToVideo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -408,9 +466,49 @@ SWIFT_CLASS_NAMED("Events")
 @property (nonatomic, copy) NSString * _Nullable date_time;
 @property (nonatomic, copy) NSString * _Nullable identity_id;
 @property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSString * _Nullable property;
+@property (nonatomic, copy) NSString * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nullable token;
 @end
+
+
+SWIFT_CLASS("_TtC10WebMaxySDK13SurveyManager")
+@interface SurveyManager : NSObject <UIPopoverPresentationControllerDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10WebMaxySDK11TouchHelper")
+@interface TouchHelper : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("Touches")
+@interface Touches : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Touches (SWIFT_EXTENSION(WebMaxySDK))
+@property (nonatomic, copy) NSString * _Nullable date;
+@property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable height;
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable object;
+@property (nonatomic, copy) NSString * _Nullable object_text;
+@property (nonatomic, copy) NSString * _Nullable screen_name;
+@property (nonatomic, copy) NSString * _Nullable timestamp;
+@property (nonatomic, copy) NSString * _Nullable touch_type;
+@property (nonatomic, copy) NSString * _Nullable width;
+@property (nonatomic, copy) NSString * _Nullable x;
+@property (nonatomic, copy) NSString * _Nullable y;
+@end
+
+
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
