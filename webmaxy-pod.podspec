@@ -31,7 +31,7 @@ WebMaxy sdk is used add support for iOS app.It is in development phase.
   s.exclude_files = 'UpdatePod.sh'
 
   s.vendored_frameworks = 'Pod/WebMaxySDK.framework'
-  s.resources           = "Pod/Resources.bundle"
+  s.resources           = 'Pod/Resources.bundle'
 
   # s.prepare_command = <<-CMD
   #   chmod 777 ./Pod/SelectDefaultXcode.sh
