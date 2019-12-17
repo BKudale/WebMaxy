@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "webmaxy-pod"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "CocoaPod implementation of WebMaxy SDK"
 
 # This description is used to generate tags and improve search results.
@@ -31,6 +31,9 @@ WebMaxy sdk is used add support for iOS app.It is in development phase.
   s.exclude_files = 'UpdatePod.sh'
 
   s.vendored_frameworks = 'Pod/WebMaxySDK.framework'
+   s.resource_bundles = {
+     'webmaxy' => ['Pod/WebMaxySDK.framework/**/*.{lproj,storyboard,xib,xcassets,json,imageset,png}']
+  }
   # s.prepare_command = <<-CMD
   #   chmod 777 ./Pod/SelectDefaultXcode.sh
   #   sh ./Pod/SelectDefaultXcode.sh
